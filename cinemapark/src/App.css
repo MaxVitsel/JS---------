@@ -27,7 +27,7 @@ header > input{
   display: flex;
   flex-direction: column;
   padding: 1em;
-  margin: 0.5em;
+  margin: 0 5em;
 }
 
 .movie_block > img{
