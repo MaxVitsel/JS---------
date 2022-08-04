@@ -32,7 +32,11 @@ function App() {
       fetch(movieApi + term)
       .then(res => res.json())
       .then(res => {
-        setMovie(res.results)
+        if(res.results.length !== 0){
+          setMovie(res.results)
+        } else{
+          setError(true)
+        }
         setLoading(false)
       })
       setTerm('')
